@@ -19,9 +19,13 @@ npm run build
 
 ## Deployment
 
-The site is deployed for free with GitHub Pages. Every push to `master` runs
-the workflow in `.github/workflows/deploy.yml`. The workflow builds the app and
-publishes it at <https://vincentardidon.github.io/pet-peeve/>.
+The app is configured for Vercel. Import this repository into a Vercel Hobby
+account for ongoing automatic deployments from `master`; Vercel detects Vite
+and uses `npm run build` with `dist` as the output directory. The rewrite in
+`vercel.json` sends direct page requests to the React app so routes work when
+opened or refreshed.
 
-For the first deployment, enable GitHub Pages in the repository settings and
-select **GitHub Actions** as the build and deployment source.
+Vercel's Hobby plan is free for personal projects. Check Vercel's current plan
+terms and usage limits before using the site commercially or at high traffic.
+An accountless `vercel deploy --temporary` deployment is temporary and expires
+unless it is claimed in a Vercel account.
