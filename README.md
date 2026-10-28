@@ -19,11 +19,12 @@ npm run build
 
 ## Deployment
 
-The app is configured for Vercel. Import this repository into a Vercel Hobby
-account for ongoing automatic deployments from `master`; Vercel detects Vite
-and uses `npm run build` with `dist` as the output directory. The rewrite in
-`vercel.json` sends direct page requests to the React app so routes work when
-opened or refreshed.
+The app is connected to Vercel for automatic deployments from `master`.
+Vercel detects Vite and uses `npm run build` with `dist` as the output
+directory. The rewrite in `vercel.json` sends direct page requests to the
+React app so routes work when opened or refreshed.
+
+Live site: <https://pet-peeve.vercel.app/>
 
 Vercel's Hobby plan is free for personal projects. Check Vercel's current plan
 terms and usage limits before using the site commercially or at high traffic.
